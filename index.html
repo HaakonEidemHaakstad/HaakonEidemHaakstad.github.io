@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haakon Eidem Haakstad — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand">
+      <img class="profile-photo" src="profil.png" alt="Haakon Eidem Haakstad">
+      <h1>Haakon Eidem Haakstad</h1>
+      <p>Data analyst, developer</p>
+      <div class="social">
+        <a href="https://www.linkedin.com/in/hehaakstad/" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://github.com/HaakonEidemHaakstad" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57v-2.23c-3.34.73-4.04-1.42-4.04-1.42-.55-1.39-1.33-1.76-1.33-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22v3.29c0 .32.21.7.82.57A12 12 0 0 0 12 .3"/></svg>
+        </a>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <footer class="sidebar-footer">
+      <p>&copy; 2026 Haakon Eidem Haakstad</p>
+    </footer>
+  </aside>
+
+  <main class="content">
+    <section id="about">
+      <h2>About</h2>
+      <p>A short introduction about yourself goes here.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>BBClassify</h3>
+          <p>An open-source Python package that estimates how accurate and consistent test-based classifications are, such as pass/fail decisions in licensure and certification exams, using the beta-binomial model. It succeeds BB-CLASS, a widely used program with an error in its Livingston and Lewis procedure that went unnoticed for over 20 years. BBClassify fixes the error and reproduces BB-CLASS's published results everywhere the error doesn't affect them. Available as a Windows program and as a pip-installable package.</p>
+          <p><a href="https://github.com/HaakonEidemHaakstad/BBClassify_Python">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>betafunctions</h3>
+          <p>An R package on CRAN for two- and four-parameter Beta distributions and for estimating the accuracy and consistency of test-based classifications. It implements three approaches (Livingston and Lewis, Hanson and Brennan, and multinomial/compound multinomial) for two or more categories, with ROC analysis, model-fit tests and results for each examinee or each score. It also includes distribution functions, moments and method-of-moments fitting for Beta, Beta-Binomial and related distributions.</p>
+          <p><a href="https://cran.r-project.org/package=betafunctions">View on CRAN</a> · <a href="https://github.com/HaakonEidemHaakstad/betafunctions">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>PBI Model Health</h3>
+          <p>A Python tool that analyses Power BI projects (PBIP/PBIR) to find cleanup candidates in the semantic model. It builds a dependency graph from reports, TMDL, DAX, relationships and Power Query, then classifies each object as used, needs review, likely unused or internal. Results come as a summary report and an Excel audit, through a desktop app and a command-line tool.</p>
+          <p><a href="https://github.com/HaakonEidemHaakstad/pbi_usage_analyzer">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Data Equivalence Analyzer</h3>
+          <p>A Python tool that verifies a data migration from Excel to BigQuery by checking that every row in the old table also exists in the new one, even when column names differ and the new table has extra columns. It suggests column mappings from name similarity and shared values, counts duplicate rows correctly, and reports the missing rows and which columns most often break a match. It comes with a BigQuery downloader that has no row limit and a simple desktop interface.</p>
+          <p><a href="https://github.com/HaakonEidemHaakstad/excel_bigquery_data_equiivalence_analyzer">View on GitHub</a></p>
+        </article>
+        <article class="card">
+          <h3>Ward Operations Dashboard</h3>
+          <p>An interactive dashboard that helps a hospital ward manager compare recorded staffing activity with admissions, discharges and discharge timing, with timelines, weekday and hourly profiles, and side-by-side comparisons. It's built on a reproducible Python cleaning workflow that keeps raw data untouched, validates every step and keeps an audit trail. An optional AI assistant interprets the charts using aggregate data only, never individual records.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, R, SQL, HTML/CSS/JavaScript</li>
+        <li><strong>Data analysis:</strong> pandas, NumPy, Jupyter, exploratory data analysis, data cleaning, reproducible workflows with validation and audit trails</li>
+        <li><strong>Data platforms:</strong> Google BigQuery, Excel, data migration and reconciliation</li>
+        <li><strong>Statistics:</strong> probability, inference, hypothesis testing, A/B testing, linear and logistic regression</li>
+        <li><strong>Psychometrics:</strong> classification accuracy and consistency, beta-binomial and strong true-score models, reliability</li>
+        <li><strong>Machine learning:</strong> scikit-learn, supervised and unsupervised learning, tree-based models, clustering</li>
+        <li><strong>Visualization and BI:</strong> Power BI (DAX, Power Query/M, TMDL, PBIP/PBIR), semantic model optimization, Matplotlib, Seaborn, Plotly, interactive dashboards</li>
+        <li><strong>Software development:</strong> R packages published on CRAN, Python packaging, desktop and command-line tools, automated testing (pytest, testthat)</li>
+        <li><strong>Tools and practices:</strong> Git/GitHub, Linux, Docker, automation, debugging, cloud and DevOps fundamentals, Agile/Scrum</li>
+        <li><strong>Generative AI:</strong> AI-assisted programming and data analysis with Claude and ChatGPT, prompt engineering, LLM-powered applications, MCP servers</li>
+      </ul>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <h3>Professional certificates and specializations</h3>
+      <ul>
+        <li>IBM DevOps, Cloud, and Agile Foundations — IBM (2024)</li>
+        <li>Google IT Automation with Python — Google (2024)</li>
+        <li>IBM Data Science — IBM (2024)</li>
+        <li>Google Advanced Data Analytics — Google (2023)</li>
+        <li>Data Analysis with R — Duke University (2022)</li>
+      </ul>
+      <h3>Courses</h3>
+      <ul>
+        <li>SQL Foundations — Microsoft (2026)</li>
+        <li>Data Analysis and Visualization with Power BI — Microsoft (2026)</li>
+        <li>Prompt Engineering with GPT: Programming for Custom Content — Coursera (2025)</li>
+        <li>Introduction to Front-End Development — Meta (2024)</li>
+        <li>Tools of the Trade: Linux and SQL — Google (2024)</li>
+        <li>Python Data Structures — University of Michigan (2017)</li>
+        <li>Programming for Everybody (Getting Started with Python) — University of Michigan (2017)</li>
+      </ul>
+      <p>All completed on Coursera: 5 program certificates and 36 course certificates in total.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p>Job title — Company (Year–Year)</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:h.e.haakstad@gmail.com">h.e.haakstad@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/hehaakstad/">linkedin.com/in/hehaakstad</a></p>
+      <p>GitHub: <a href="https://github.com/HaakonEidemHaakstad">github.com/HaakonEidemHaakstad</a></p>
+    </section>
+  </main>
+</body>
+</html>

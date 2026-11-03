@@ -1,0 +1,100 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #222;
+  background: #f7f7f5;
+  line-height: 1.6;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 100vh;
+  background: #2b3a4a;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  overflow-y: auto;
+}
+
+.profile-photo {
+  display: block;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 1rem;
+}
+
+.brand h1 { font-size: 1.5rem; }
+.brand p { font-size: 0.9rem; opacity: 0.75; margin-bottom: 0.75rem; }
+
+.social { display: flex; gap: 0.5rem; margin-bottom: 2rem; }
+.social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #dfe6ee;
+}
+.social a:hover { background: #f0b429; color: #2b3a4a; }
+.social svg { width: 18px; height: 18px; fill: currentColor; }
+
+.sidebar nav ul { list-style: none; }
+.sidebar nav a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #dfe6ee;
+  text-decoration: none;
+  border-left: 3px solid transparent;
+}
+.sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-left-color: #f0b429;
+  color: #fff;
+}
+
+.sidebar-footer { margin-top: auto; font-size: 0.8rem; opacity: 0.6; }
+
+/* Main content */
+.content {
+  margin-left: 240px;
+  padding: 3rem;
+  max-width: 900px;
+}
+
+section { margin-bottom: 3rem; }
+section h2 {
+  border-bottom: 2px solid #2b3a4a;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+section ul { padding-left: 1.25rem; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 1rem;
+}
+
+/* Small screens: sidebar on top */
+@media (max-width: 700px) {
+  .sidebar { position: static; width: 100%; height: auto; }
+  .content { margin-left: 0; padding: 1.5rem; }
+}
